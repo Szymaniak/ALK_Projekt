@@ -3,7 +3,7 @@
 
 ## Opis projektu
 
-Projekt zawiera zestaw testów automatycznych interfejsu użytkownika (UI) dla aplikacji sklepu internetowego. Testy zostały przygotowane przy użyciu biblioteki **Selenium** w języku **Python** oraz bazują na strukturze **Page Object Model (POM)**.
+Projekt zawiera zestaw testów automatycznych interfejsu użytkownika (UI) dla aplikacji sklepu internetowego, służącej do ćwiczenia testów automatycznych https://demoblaze.com/. Testy zostały przygotowane przy użyciu biblioteki **Selenium** w języku **Python** oraz bazują na strukturze **Page Object Model (POM)**.
 
 Testy obejmują najważniejsze funkcjonalności z punktu widzenia użytkownika końcowego: rejestrację, logowanie, dodawanie produktów do koszyka, usuwanie produktów oraz weryfikację cen.
 
