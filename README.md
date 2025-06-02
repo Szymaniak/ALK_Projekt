@@ -26,9 +26,9 @@ W testach została wykorzystana biblioteka Faker do generowania danych (Przypade
 .
 ├── pages/              # Obiekty stron (Page Object Model)
 ├── tests/              # Przypadki testowe
-├── screenshots/        # Zrzuty ekranu z testów (generowane automatycznie)
+├── screenshots/        # Zrzuty ekranu z testów 
 ├── README.md           # Dokumentacja projektu
-└── requirements.txt    # Lista wymaganych bibliotek (opcjonalnie)
+└── requirements.txt    # Lista wymaganych bibliotek 
 ```
 
 ---
