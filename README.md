@@ -7,6 +7,14 @@ Projekt zawiera zestaw testów automatycznych interfejsu użytkownika (UI) sklep
 
 Testy obejmują najważniejsze funkcjonalności z punktu widzenia użytkownika końcowego: rejestrację, logowanie, dodawanie produktów do koszyka, usuwanie produktów oraz weryfikację cen.
 
+W ramach projektu zostało wykonanych 5 przypadków testowych:
+1. Rejestracja nowego użytkownika                                    
+2. Walidacja formularza logowania
+3. Dodanie losowego produktu do koszyka
+4. Dodanie produktu do koszyka i jego usunięcie
+5. Dodanie losowej liczby produktów do koszyka i weryfikacja sumy cen
+
+
 W testach została wykorzystana biblioteka Faker do generowania danych (Przypadek testowy 001 - Rejestracja nowego użytkownika). Zapisywanie zrzutów ekranu wraz z datą ich wykonania (Przypadek testowy 004 - Dodanie produktu do koszyka i jego usunięcie)
 
 ---
