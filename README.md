@@ -5,7 +5,9 @@
 
 Projekt zawiera zestaw testów automatycznych interfejsu użytkownika (UI) dla aplikacji sklepu internetowego. Testy zostały przygotowane przy użyciu biblioteki **Selenium** w języku **Python** oraz bazują na strukturze **Page Object Model (POM)**.
 
-Testy obejmują najważniejsze funkcjonalności z punktu widzenia użytkownika końcowego: rejestrację, logowanie, dodawanie produktów do koszyka, usuwanie produktów, weryfikację cen oraz walidację formularzy.
+Testy obejmują najważniejsze funkcjonalności z punktu widzenia użytkownika końcowego: rejestrację, logowanie, dodawanie produktów do koszyka, usuwanie produktów oraz weryfikację cen.
+
+W testach została wykorzystana biblioteka Faker do generowania danych (Przypadek testowy 001 - Rejestracja nowego użytkownika). Zapisywanie zrzutów ekranu wraz z datą ich wykonania (Przypadek testowy 004 - Dodanie produktu do koszyka i jego usunięcie)
 
 ---
 
@@ -33,36 +35,24 @@ Testy obejmują najważniejsze funkcjonalności z punktu widzenia użytkownika k
 
 ## Lista przypadków testowych
 
-| ID   | Tytuł                                                                                     | Opis                                                                                      |
-|------|--------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| 001  | Ładowanie strony startowej https://inpost.pl/                                              | Sprawdzenie, czy strona główna ładuje się poprawnie.                                     |
-| 002  | Rejestracja nowego użytkownika i logowanie                                                 | Rejestracja użytkownika, a następnie logowanie i weryfikacja komunikatu powitalnego.     |
-| 003  | Walidacja formularza logowania – brak danych oraz poprawne logowanie                      | Test logowania bez danych oraz z poprawnymi danymi użytkownika.                          |
-| 004  | Dodanie losowego produktu do koszyka z poziomu strony głównej                              | Dodanie jednego losowo wybranego telefonu do koszyka i weryfikacja poprawności dodania.  |
-| 005  | Dodanie produktu „Samsung galaxy s6” do koszyka i jego usunięcie                          | Dodanie konkretnego produktu, zapis zrzutów ekranu przed i po usunięciu z koszyka.       |
-| 006  | Dodanie losowej liczby produktów do koszyka i weryfikacja sumy cen                        | Dodanie od 1 do 4 produktów, zliczenie cen i porównanie z wartością podaną w koszyku.     |
+| ID  | Tytuł                                                              | Opis                                                                                                                                                       |
+|-----|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 001 | Rejestracja nowego użytkownika                                     | Rejestracja użytkownika, a następnie weryfikacja czy konto zostało poprawnie założone poprzez zalogowanie się na nie i weryfikację komunikatu powitalnego. |
+| 002 | Walidacja formularza logowania                                     | Test logowania bez danych oraz z poprawnymi danymi użytkownika.                                                                                            |
+| 003 | Dodanie losowego produktu do koszyka                               | Dodanie jednego losowo wybranego telefonu do koszyka i weryfikacja poprawności dodania.                                                                    |
+| 004 | Dodanie produktu do koszyka i jego usunięcie                       | Dodanie konkretnego produktu, zapis zrzutów ekranu przed i po usunięciu produktu z koszyka.                                                                |
+| 005 | Dodanie losowej liczby produktów do koszyka i weryfikacja sumy cen | Dodanie od 1 do 4 produktów, zliczenie cen i porównanie z wartością podaną w koszyku.                                                                      |
 
 ---
 
 ## Uruchamianie testów
 
-1. Upewnij się, że masz zainstalowanego **Pythona 3** oraz bibliotekę `selenium`.
-2. Uruchom testy za pomocą polecenia:
+Poszczegulne testy można uruchomić z plików, w których się znajdują. 
 
-```bash
-python -m unittest discover tests/
-```
-
----
-
-## Uwagi
-
-- Testy generują zrzuty ekranu do katalogu `screenshots/` przy usuwaniu produktów.
-- Część danych (np. użytkownicy testowi) jest generowana dynamicznie z użyciem biblioteki `Faker`.
-- Testy mogą wymagać dostosowania do konkretnego adresu URL aplikacji.
+Wszystkie testy naraz można włączyć wykonująć plik main.
 
 ---
 
 ## Autor
 
-Zespół QA
+Damian Szymański
