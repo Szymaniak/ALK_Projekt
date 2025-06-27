@@ -55,7 +55,7 @@ W testach została wykorzystana biblioteka Faker do generowania danych (Przypade
 
 ## Uruchamianie testów
 
-Poszczegulne testy można uruchomić z plików, w których się znajdują. 
+Poszczególne testy można uruchomić z plików, w których się znajdują. 
 
 Wszystkie testy naraz można włączyć wykonująć plik main.
 
